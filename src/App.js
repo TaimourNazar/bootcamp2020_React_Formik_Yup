@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import UserForm from './Forms/UserForm';
+import UserFormWithFormik from './Forms/UserFormWithFormik';
+import UserFormWithFormikValidation from './Forms/UserFormWithFormikValidation';
+import UserFormWithFormikContext from './Forms/UserFormWithFormikContext';
+import UserFormWithFormikMaterialUI from './Forms/UserFormWithFormikMaterialUI';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UserForm/><hr/>
+      <UserFormWithFormik/><hr/>
+      <UserFormWithFormikValidation/><hr/>
+      <UserFormWithFormikContext/><hr/>
+      <UserFormWithFormikMaterialUI/>
     </div>
   );
 }
